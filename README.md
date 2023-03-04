@@ -1,28 +1,37 @@
-@metamask/template-snap
-The "Hello, world!" of MetaMask Snaps, and also a GitHub template repository for the KryptoKredit Invoices project. For instructions on how to use the template, see the MetaMask documentation.
+# @metamask/template-snap
 
-How To Use This Template
-This repository contains the files you need to start your KryptoKredit Invoices snap project. First, log into GitHub, then click the "Use this template" button to clone this repository into a new project. Once your new repository is created, you can modify the source code to make it your own. For a step-by-step guide, read The 5-Minute Snap Tutorial.
+The "Hello, world!" of MetaMask Snaps, and also a GitHub template repository for the KryptoKredit Invoices project. For instructions on how to use the template, see [the MetaMask documentation](https://docs.metamask.io/guide/snaps.html#serving-a-snap-to-your-local-environment).
 
-Cloning
-If you clone or create this repository outside the KryptoKredit organization, you probably want to run ./scripts/cleanup.sh to remove some files that will not work properly outside the KryptoKredit GitHub organization.
+## How To Use This Template
 
-This repository contains other GitHub Actions that you may find useful, see .github/workflows and Releasing & Publishing below for more information.
+This repository contains the files you need to start your KryptoKredit Invoices snap project. First, log into GitHub, then click the "Use this template" button to clone this repository into a new project. Once your new repository is created, you can modify the source code to make it your own. For a step-by-step guide, read [The 5-Minute Snap Tutorial](https://github.com/Montoya/gas-fee-snap#readme).
 
-Note that the action-publish-relase.yml workflow contains a step that publishes the frontend of this snap (contained in the public/ directory) to GitHub pages. If you do not want to publish the frontend to GitHub pages, simply remove the step named "Publish to GitHub Pages" in that workflow.
+## Cloning
+
+If you clone or create this repository outside the KryptoKredit organization, you probably want to run `./scripts/cleanup.sh` to remove some files that will not work properly outside the KryptoKredit GitHub organization.
+
+This repository contains other GitHub Actions that you may find useful, see `.github/workflows` and [Releasing & Publishing](#releasing-publishing) below for more information.
+
+Note that the `action-publish-relase.yml` workflow contains a step that publishes the frontend of this snap (contained in the public/ directory) to GitHub pages. If you do not want to publish the frontend to GitHub pages, simply remove the step named "Publish to GitHub Pages" in that workflow.
 
 If you do not wish to use any of the existing GitHub actions in this repository, simply delete the .github/workflows directory.
 
-Contributing
-Setup
+## Contributing
+
+### Setup
+```
 yarn install
+```
 
-Testing and Linting
-Run yarn test to run the tests once.
+### Testing and Linting
 
-Run yarn lint to run the linter, or run yarn lint:fix to run the linter and fix any automatically fixable issues.
 
-Releasing & Publishing
+Run `yarn test` to run the tests once.
+
+Run `yarn lint` to run the linter, or run `yarn lint:fix` to run the linter and fix any automatically fixable issues.
+
+### Releasing & Publishing
+
 The project follows the same release process as the other libraries in the KryptoKredit organization. The GitHub Actions action-create-release-pr and action-publish-release are used to automate the release process; see those repositories for more information about how they work.
 
 Choose a release version.
